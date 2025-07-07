@@ -16,7 +16,7 @@ async function testRating() {
     console.log('Test data:', testData);
 
     // Test adding rating
-    const response = await axios.post(`http://localhost:5000/api/v1/addRating/${testData.productId}`, {
+    const response = await axios.post(`https://dev-ai-shop-backend.vercel.app/api/v1/addRating/${testData.productId}`, {
       userId: testData.userId,
       stars: testData.stars,
       comment: testData.comment
@@ -25,7 +25,7 @@ async function testRating() {
     console.log('Rating response:', response.data);
 
     // Test getting reviews
-    const reviewsResponse = await axios.get(`http://localhost:5000/api/v1/getReviews/${testData.productId}`);
+    const reviewsResponse = await axios.get(`https://dev-ai-shop-backend.vercel.app/api/v1/getReviews/${testData.productId}`);
     console.log('Reviews response:', reviewsResponse.data);
 
   } catch (error) {

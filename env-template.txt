@@ -1,5 +1,5 @@
 # Database Configuration
-DATABASE_URL=mongodb+srv://guptaravii263:d9UxkunX03arxibz@tododb.muyfv.mongodb.net/HackathonDB
+DATABASE_URL=your_mongodb_atlas_url_here
 # OR use local MongoDB
 # DATABASE_URL=mongodb://localhost:27017/walmart-hackathon
 
@@ -44,4 +44,30 @@ API_SECRET=your_cloudinary_api_secret
 
 # CORS Configuration
 # FRONTEND_URL=http://localhost:5173
-# ALLOWED_ORIGINS=http://localhost:5173,http://localhost:3000 
+# ALLOWED_ORIGINS=http://localhost:5173,http://localhost:3000
+
+# JWT Configuration
+JWT_SECRET=your_jwt_secret_here
+JWT_EXPIRES_IN=7d
+
+# Google OAuth Configuration
+GOOGLE_CLIENT_ID=your_google_client_id_here
+GOOGLE_CLIENT_SECRET=your_google_client_secret_here
+# GOOGLE_REDIRECT_URI=https://dev-ai-shop.vercel.app/auth/google/callback
+
+# Facebook OAuth Configuration
+FACEBOOK_APP_ID=your_facebook_app_id_here
+FACEBOOK_APP_SECRET=your_facebook_app_secret_here
+# FACEBOOK_REDIRECT_URI=https://dev-ai-shop.vercel.app/auth/google/callback
+
+# Cloudinary Configuration
+CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+
+# Google Vertex AI Configuration
+GOOGLE_APPLICATION_CREDENTIALS=vertex-service-account.json
+
+# CORS Configuration
+# FRONTEND_URL=https://dev-ai-shop.vercel.app
+# ALLOWED_ORIGINS=https://dev-ai-shop.vercel.app,http://localhost:3000 

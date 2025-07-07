@@ -80,7 +80,7 @@ if (response.data.product && response.data.product.buyNo !== undefined) {
 ### API Testing
 ```bash
 # Test purchase endpoint
-curl -X POST http://localhost:5000/api/v1/purchase \
+curl -X POST https://dev-ai-shop-backend.vercel.app/api/v1/purchase \
   -H "Content-Type: application/json" \
   -d '{"userId":"USER_ID","productId":"PRODUCT_ID"}'
 

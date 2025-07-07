@@ -89,14 +89,14 @@ async function addDummyProducts() {
     // Test the API endpoint
     console.log('\n=== API TESTING ===');
     console.log('To test the API, use these endpoints:');
-    console.log(`1. Get all products: GET http://localhost:5000/api/v1/getAllproducts`);
-    console.log(`2. Get product by ID: GET http://localhost:5000/api/v1/getProduct/${firstProduct._id}`);
+    console.log(`1. Get all products: GET https://dev-ai-shop-backend.vercel.app/api/v1/getAllproducts`);
+    console.log(`2. Get product by ID: GET https://dev-ai-shop-backend.vercel.app/api/v1/getProduct/${firstProduct._id}`);
     
     console.log('\n=== CURL COMMANDS ===');
     console.log('Get all products:');
-    console.log('curl -X GET http://localhost:5000/api/v1/getAllproducts');
+    console.log('curl -X GET https://dev-ai-shop-backend.vercel.app/api/v1/getAllproducts');
     console.log('\nGet product by ID:');
-    console.log(`curl -X GET http://localhost:5000/api/v1/getProduct/${firstProduct._id}`);
+    console.log(`curl -X GET https://dev-ai-shop-backend.vercel.app/api/v1/getProduct/${firstProduct._id}`);
 
   } catch (error) {
     console.error('Error:', error);

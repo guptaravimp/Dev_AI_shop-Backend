@@ -247,12 +247,12 @@ Response:
 ### API Testing
 ```bash
 # Test adding rating
-curl -X POST http://localhost:5000/api/v1/addRating/PRODUCT_ID \
+curl -X POST https://dev-ai-shop-backend.vercel.app/api/v1/addRating/PRODUCT_ID \
   -H "Content-Type: application/json" \
   -d '{"userId":"USER_ID","stars":5,"comment":"Great product!"}'
 
 # Test getting reviews
-curl http://localhost:5000/api/v1/getReviews/PRODUCT_ID
+curl https://dev-ai-shop-backend.vercel.app/api/v1/getReviews/PRODUCT_ID
 ```
 
 ## Troubleshooting

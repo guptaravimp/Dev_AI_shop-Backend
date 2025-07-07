@@ -246,12 +246,12 @@ The YourSellProducts page includes a comprehensive dashboard:
 ### **API Testing**
 ```bash
 # Test creating product with seller
-curl -X POST http://localhost:5000/api/v1/createProduct \
+curl -X POST https://dev-ai-shop-backend.vercel.app/api/v1/createProduct \
   -H "Content-Type: application/json" \
   -d '{"productName":"Test Product","description":"Test","category":"electronics","price":100,"sellerId":"USER_ID"}'
 
 # Test getting user's sold products
-curl http://localhost:5000/api/v1/getUserSoldProducts/USER_ID
+curl https://dev-ai-shop-backend.vercel.app/api/v1/getUserSoldProducts/USER_ID
 ```
 
 ## Deployment Notes

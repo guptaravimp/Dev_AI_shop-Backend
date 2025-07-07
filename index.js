@@ -12,7 +12,7 @@ const port = process.env.PORT || 5000;
 const cloudinary=require("./config/cloudinary")
 // app.use(cors());
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://dev-ai-shop.vercel.app',
   credentials: true
 }));
 
